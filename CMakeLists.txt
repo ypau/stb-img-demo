@@ -10,3 +10,8 @@ endif()
 add_executable(${CMAKE_PROJECT_NAME}
   stb_img_demo.cpp
 )
+
+include(GNUInstallDirs)
+install(TARGETS ${CMAKE_PROJECT_NAME}
+  RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
